@@ -15,7 +15,7 @@ export default function Counter(props) {
     setVotes(votes + 1);
   };
   const handleDecrement = () => {
-    if (count > 0) {
+    if (count > 0 && votes > 0) {
       dispatch(decrement());
       setVotes(votes - 1);
     }
